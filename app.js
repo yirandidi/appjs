@@ -2,7 +2,7 @@
 *
 *	手机端组件
 *	文档地址: https://www.showdoc.cc/805612872705921?page_id=4429881966920245
-* 	
+* 	github: https://github.com/yirandidi/appjs
 *	当前版本信息:0.0.4
 * 	...
 * 	0.0.3 :
