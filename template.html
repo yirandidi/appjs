@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8">
+		<title>template复用的样式页</title>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+		<!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
+		<!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+		<script src="js/jquery183.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="header">
+				<div class="header_body">
+					<a href="/" class="logo">
+						<img src="images/logo.png">
+					</a>
+					<div class="flexCenter">
+						<button class="search_btn"></button>
+						<button class="nav_btn">
+							<i></i>
+							<i></i>
+							<i></i>
+						</button>
+					</div>
+				</div>
+				<!-- header_body end -->
+				
+				<div class="search clearfix">
+					<form action="">
+						<button type="submit" class="search_submit"></button>
+						<input type="text" class="search_text" placeholder="请输入您要搜索内容的关键字" name="" id="" value="" />
+						<div class="search_close" onclick="closeSearch()"></div>
+					</form>
+				</div>
+				<!-- search end -->
+				
+				<div class="nav guodu">
+					<ul>
+						<li>
+							<a href="/" class="nav_a">
+								<span class="nav_text">首页</span>
+								<div class="subnav_btn">
+									<img src="images/icon4.png" >
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="产品中心.html" class="nav_a">
+								<span class="nav_text">产品中心</span>
+								<div class="subnav_btn">
+									<img src="images/icon4.png" class="guodu">
+								</div>
+							</a>
+							<div class="sub_nav">
+								<a href="">安全产品</a>
+								<a href="">网络产品</a>
+								<a href="">管理优化</a>
+								<a href="">容灾备份</a>
+								<a href="">平台架构</a>
+								<a href="">办公协同</a>
+							</div>
+						</li>
+						<li>
+							<a href="解决方案.html" class="nav_a">
+								<span class="nav_text">解决方案</span>
+								<div class="subnav_btn">
+									<img src="images/icon4.png" >
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="自主产品.html" class="nav_a">
+								<span class="nav_text">自主产品</span>
+								<div class="subnav_btn">
+									<img src="images/icon4.png" >
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="合作伙伴.html" class="nav_a">
+								<span class="nav_text">合作伙伴</span>
+								<div class="subnav_btn">
+									<img src="images/icon4.png" >
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="成功案例.html" class="nav_a">
+								<span class="nav_text">成功案例</span>
+								<div class="subnav_btn">
+									<img src="images/icon4.png" >
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="关于我们.html" class="nav_a">
+								<span class="nav_text">关于我们</span>
+								<div class="subnav_btn">
+									<img src="images/icon4.png" class="guodu">
+								</div>
+							</a>
+							<div class="sub_nav">
+								<a href="关于我们.html?page=1">公司简介</a>
+								<a href="关于我们.html?page=2">资质认证</a>
+								<a href="关于我们.html?page=3">企业荣誉</a>
+								<a href="关于我们.html?page=4">联系我们</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="header_"></div>
+			<!-- header end -->
+			<!-- 头部 -->
+			
+			<div class="footer">
+				
+				<a href="产品中心.html" class="flexCenter jus box plr40 b1">
+					<span class="colfff fz28 lh100">产品中心</span>
+					<img src="images/icon4.png" class="w1119">
+				</a>
+				<a href="产品中心.html" class="flexCenter jus box plr40 b1">
+					<span class="colfff fz28 lh100">解决方案</span>
+					<img src="images/icon4.png" class="w1119">
+				</a>
+				<a href="自主产品.html" class="flexCenter jus box plr40 b1">
+					<span class="colfff fz28 lh100">自主产品</span>
+					<img src="images/icon4.png" class="w1119">
+				</a>
+				<a href="合作伙伴.html" class="flexCenter jus box plr40 b1">
+					<span class="colfff fz28 lh100">合作伙伴</span>
+					<img src="images/icon4.png" class="w1119">
+				</a>
+				<a href="成功案例.html" class="flexCenter jus box plr40 b1">
+					<span class="colfff fz28 lh100">成功案例</span>
+					<img src="images/icon4.png" class="w1119">
+				</a>
+				<a href="关于我们.html" class="flexCenter jus box plr40 b1">
+					<span class="colfff fz28 lh100">关于我们</span>
+					<img src="images/icon4.png" class="w1119">
+				</a>
+				
+				<div class="footer_copy">
+					<p>
+						<span>2020©深圳海胤科技有限公司</span>
+						<a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备18051104号</a> 
+					</p>
+					<p>
+						<span>ALL RIGHTS RESERVED</span>
+						<a href="https://www.yuegekeji.cn" target="_blank">技术支持：悦阁科技</a> 
+					</p>
+				</div>
+			</div>
+			<!-- footer end -->
+			<!-- 底部 -->
+			<a href="" class="btnstyle1 hoverBtn guodu">btnstyle1</a>
+			<a href="" class="btnstyle2 hoverBtn guodu">btnstyle2</a>
+			<button class="btn1">alert</button><br>
+			<button class="btn2">confirm</button><br>
+			<button class="btn3">showToast</button><br>
+			<button class="btn4">showLoading</button><br>
+			<button class="btn5" disabled="disabled">previewImage</button><br> <!--这次没用到-->
+			<button class="btn6">notifi</button><br>
+			<button class="btn7">notifi(success)</button><br>
+			<button class="btn8">notifi(error)</button><br>
+			<button class="btn9">notifi(info)</button><br>
+			<input placeholder="时间选择器" id="picker" disabled="disabled" readonly="readonly"/> <!--这次没用到-->
+		</div>
+		<script type="text/javascript">
+			// var p = new picker({
+			//     dom:"#picker"
+			// })
+			$(".btn1").click(function(){
+				app.alert({
+					content:"1",
+				})
+			})
+			$(".btn2").click(function(){
+				app.confirm({
+					content:"2"
+				})
+			})
+			$(".btn3").click(function(){
+				// app.showToast({
+				// 	icon:"success",
+				// 	duration:2000,
+				// 	title:"我是success"
+				// })
+				// app.showToast({
+				// 	icon:"error",
+				// 	duration:2000,
+				// 	title:"我是error"
+				// })
+				app.showToast({
+					icon:"none",
+					duration:2000,
+					title:"我是none"
+				})
+			})
+			$(".btn4").click(function(){
+				app.showLoading({
+					title:"加载中...",
+				});
+				setTimeout(function(){
+					app.hideLoading();
+				},1000)
+			})
+			$(".btn5").click(function(){
+				// app.previewImage({
+				//     current: 'http://cf.timecreation.cn/uploads/20200617/8c3f8cff4dcac05cc0430e278197a1c4.jpeg',
+				//     urls: ['http://cf.timecreation.cn/uploads/20200617/295166f2b38852b6d97070c94bbea674.jpg','http://cf.timecreation.cn/uploads/20200617/8c3f8cff4dcac05cc0430e278197a1c4.jpeg']
+				// })
+			})
+			$(".btn6").click(function(){
+				app.notifi({
+					icon:"none",
+					duration:5000,
+					title:"消息",
+					content:"这是一条普通的消息提醒"
+				})
+			})
+			$(".btn7").click(function(){
+				app.notifi({
+					icon:"success",
+					duration:5000,
+					title:"成功",
+					content:"这是一条成功的消息提醒"
+				})
+			})
+			$(".btn8").click(function(){
+				app.notifi({
+					icon:"error",
+					duration:5000,
+					title:"错误",
+					content:"这是一条错误的消息提醒"
+				})
+			})
+			$(".btn9").click(function(){
+				app.notifi({
+					icon:"info",
+					duration:5000,
+					title:"警告",
+					content:"这是一条警告的消息提醒"
+				})
+			})
+		</script>
+	</body>
+</html>
